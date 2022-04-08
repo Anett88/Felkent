@@ -9,10 +9,21 @@ public class Eszkoz {
 
     public Eszkoz(String nev, int suly) {
         this.nev = nev;
-        this.suly=suly;
+        if(this.suly<=10){
+           this.suly=10;
+        }else{
+            this.suly=suly;
+            
+        }
         
         
         
+        
+    }
+
+    @Override
+    public String toString() {
+        return "Eszkoz{" + "nev=" + nev + ", suly=" + suly + '}';
     }
     
     
